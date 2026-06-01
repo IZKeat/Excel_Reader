@@ -19,6 +19,8 @@
 | 5 | 编写 UI | ✅ | 见下方「功能清单」 |
 | 6 | 配置 release 签名 | ✅ | keystore + key.properties（已 gitignore）+ build.gradle.kts signingConfigs.release |
 | 7 | 构建 release APK | ✅ | `flutter build apk --release` 成功 |
+| 8 | 安装到真机 | ✅ | 经 adb 安装到手机，功能实测正常 |
+| 9 | 自定义应用图标 | ✅ | 用 flutter_launcher_icons 生成 Excel 图标，已安装确认 |
 
 ## 功能清单（lib/main.dart）
 
@@ -46,7 +48,8 @@
 
 ## 后续待办
 
-- [ ] 安装到真机/模拟器实测：表头加粗、金额右对齐、多 sheet 切换、大表滚动、坏文件提示
-- [ ] （可选）自定义应用图标
+- [x] 安装到真机实测：已安装，功能正常
+- [x] 自定义应用图标：Excel 图标，已生成并安装
+- [ ] （可选）换用 1024×1024 正方形高清图标源，提升清晰度
 - [ ] （可选）支持 .xls 旧格式 / CSV
 - [ ] （可选）按文件名记忆最近打开
